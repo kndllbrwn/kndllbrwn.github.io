@@ -1,0 +1,64 @@
+body {
+      width: 60em;
+      margin: auto;
+      background-color: cornsilk;
+    }
+
+    blockquote {
+      margin-left: 0;
+    }
+
+    h1 {
+      margin-right: auto;
+    }
+
+    h2 {
+      color:blue;
+      font-size: 2em;
+    }
+
+    ul > *, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      list-style-position: inside;
+    }
+
+    aside {
+      margin-top:1.5em;
+    }
+    
+    aside ul li {
+      display: inline;
+      margin-right: .5rem;
+    }
+
+    .flex-container {
+      display: -webkit-flex;
+      display: flex;
+      margin-right: auto;
+      flex-wrap: wrap;
+    }
+
+    .flex-item1 {
+      width: 55%;
+    }
+
+    .flex-item2 {
+      margin-left:5em;
+      width: 30%;
+    }
+
+    header {
+      display: flex;
+      align-content: space-between;
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+    }
+    i {
+      color: black;
+    }
