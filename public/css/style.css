@@ -50,6 +50,17 @@ body {
       margin-left:5em;
       width: 30%;
     }
+    @media only screen and (max-width: 500px) {
+    .flex-item1 {
+      width: 75%;
+    }
+    .flex-item2 {
+      margin-left:5em;
+      width: 10%;
+    }
+}
+
+    
 
     header {
       display: flex;
