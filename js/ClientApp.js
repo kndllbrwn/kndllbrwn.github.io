@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import Title from './Title'
+
 const App = React.createClass({
   render(){
     return (
@@ -22,7 +24,7 @@ const App = React.createClass({
         <hr/>
         <div className="flex-container">
           <section className="flex-item1">
-            <h2>EXPERIENCE</h2> 
+            <Title header="Experience"/> 
             <ul>
               <h3>Engineer/Consultant</h3>
               <p><i><a href="https://www.boozallen.com/" target="_blank">Booz Allen Hamilton</a></i>      <span>June 2016 - Present</span></p>
@@ -71,7 +73,7 @@ const App = React.createClass({
           </section>
           <section className="flex-item2">
             <dl>
-              <h2>SKILLS</h2>
+              <Title header="Skills"/>
               <dt>  Front End Development:</dt>
               <dd>Javascript, React, angularJS, jQuery, 
               HTML, CSS, Meteor, SASS, Materialize</dd>
@@ -89,7 +91,7 @@ const App = React.createClass({
             </dl>
 
             <dl>
-              <h2>EDUCATION</h2>
+              <Title header="Education"/>
               <dt>  General Assembly</dt>
               <dd>Graduate, UX Day Camp</dd>
               <dt>  Pennsylvania State University </dt>
@@ -98,7 +100,7 @@ const App = React.createClass({
             </dl>
             <div id="Interests">
               <ul>
-                <h2>INTERESTS & ACTIVITIES</h2>
+                <Title header="Interests & Activities"/>
                 <li>Volunteerism and change management(President of Penn State Alumni AIG)</li>
                 <li>  Consumer advocacy and education awareness</li>
                 <li>Health and fitness enthusiast</li>
