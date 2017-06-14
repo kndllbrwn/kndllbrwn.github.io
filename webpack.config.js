@@ -12,7 +12,7 @@ module.exports = {
     publicPath: '/public/'
   },
   resolve: {
-    extensions: ['.js', '.json']
+    extensions: ['.js', '.jsx', '.json']
   },
   stats: {
     colors: true,
@@ -22,8 +22,12 @@ module.exports = {
   module: {
     rules: [
       {
-        include: path.resolve(__dirname, 'js'),
+        include: path.resolve(__dirname),
         test: /\.js$/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.jsx$/,
         loader: 'babel-loader'
       },
       {
