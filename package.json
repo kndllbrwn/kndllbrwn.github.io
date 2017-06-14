@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "build": "webpack",
+    "watch": "npm run build -- --watch"
   },
   "dependencies": {
     "axios": "^0.15.3",

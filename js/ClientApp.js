@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import '../public/style.css'
+
 import Title from './Title'
 
 const App = React.createClass({
