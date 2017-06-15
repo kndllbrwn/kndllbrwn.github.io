@@ -1,0 +1,33 @@
+{
+    "jobs": [{
+        "title": "Engineer",
+        "company": "Booz Allen Hamilton",
+        "link": "https://www.boozallen.com/",
+        "year": "June 2016 - Present",
+        "description": ["Create technical documentation for client and consultants on project", "Log bugs in production code", "Review code against style guide for compliance", "Update production code for client", "Conduct 508 compliance tests on static files", "Assist with IRS with transformation migration of largest federal website in history"]
+    }, {
+        "title": "Freelance Developer",
+        "company": "International Traveler Assurance, Phi Beta Sigma",
+        "link": "",
+        "year": "06/15 – 06/16",
+        "description": ["Created custom HTML, CSS, and JavaScript for clients", "Generated database of alumni brothers stored in a JSON file", "Developed searchable application of brothers using MVC framework/Angular application pulling from JSON file"]
+    }, {
+        "title": "Manager of Web Technologies (Contract)",
+        "company": "https://www.hearingloss.org/",
+        "link": "Hearing Loss Association of America",
+        "year": "11/15 – 12/15",
+        "description": ["Created and updated pages for website with over 500,000 annual visitors", "Created several html email campaigns messaging thousands of members and constituents", "Utilized Adobe Photoshop to create new slide for Association homepage"]
+    }, {
+        "title": "Resources Coordinator",
+        "company": "American University Washington College of Law",
+        "link": "https://www.wcl.american.edu/career/",
+        "year": "05/14 – 11/15",
+        "description": ["Designed front-end content for Office of Career & Professional Development", "Assisted internal stakeholders with modernization of pages by improving UX, IA, and content design decisions", "Drafted messaging content and pages for highly public office campaigns"]
+    }, {
+        "title": "Program Assistant",
+        "company": "American Political Science Association",
+        "link": "https://www.apsanet.org/",
+        "year": "03/12 – 11/13",
+        "description": ["Created and maintained pages for largest political science association in U.S.", "Drafted HTML email campaigns", "Managed APSA Mentorship program including recruitment, matching, surveying, and evaluations"]
+    }]
+}
