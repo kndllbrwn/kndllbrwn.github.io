@@ -1,21 +1,17 @@
-import react from 'react'
+import React from 'react'
 
 
 const Position = React.createClass({
   render () {
+    const { title, company, link, year, description} = this.props
     return (
-        <ul>
-              <h3></h3>
-              <p><i><a href="https://www.boozallen.com/" target="_blank">Booz Allen Hamilton</a></i>      <span>June 2016 - Present</span></p>
-              <li>  Create technical documentation for client and consultants on project </li>
-              <li>  Log bugs in production code</li>
-              <li>  Review code against style guide for compliance.</li>
-              <li>  Update production code for client</li>
-              <li>  Conduct 508 compliance tests on static files</li>
-              <li>  Assist with IRS with transformation migration of largest federal website in history</li>
+        <ul className="position">
+          <h3>{title}</h3>
+          <p><i><a href={link} target="_blank">{company}</a></i>      <span>{year}</span></p>
+          {description.map((role) => { return <li>{role}</li>})}
         </ul>
     )
   }
 })
 
-export default Title
+export default Position

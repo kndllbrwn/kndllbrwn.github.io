@@ -13,8 +13,8 @@
         "description": ["Created custom HTML, CSS, and JavaScript for clients", "Generated database of alumni brothers stored in a JSON file", "Developed searchable application of brothers using MVC framework/Angular application pulling from JSON file"]
     }, {
         "title": "Manager of Web Technologies (Contract)",
-        "company": "https://www.hearingloss.org/",
-        "link": "Hearing Loss Association of America",
+        "company": "Hearing Loss Association of America",
+        "link": "https://www.hearingloss.org/",
         "year": "11/15 – 12/15",
         "description": ["Created and updated pages for website with over 500,000 annual visitors", "Created several html email campaigns messaging thousands of members and constituents", "Utilized Adobe Photoshop to create new slide for Association homepage"]
     }, {
@@ -29,5 +29,18 @@
         "link": "https://www.apsanet.org/",
         "year": "03/12 – 11/13",
         "description": ["Created and maintained pages for largest political science association in U.S.", "Drafted HTML email campaigns", "Managed APSA Mentorship program including recruitment, matching, surveying, and evaluations"]
+    }],
+    "skills": [{
+      "Front End Development": ["Javascript", "React", "Angular", "jQuery", "HTML", "CSS", "Meteor", "SASS", "Materialize"]
+    }, {
+      "Back End Development": ["NodeJS", "Ruby on Rails", "Meteor", "Express", "Connect", "NPM", "Yarn"]
+    }, {
+      "Testing": ["Mocha", "Karma" ]
+    }, {
+      "Databases": ["SQLite", "MongoDB", "ActiveRecord", "Noah", "Datatel", "Symplicity"]
+    }, {
+      "Content Management Systems": ["WordPress", "Drupal"]
+    }, {
+      "Graphic Design": ["Photoshop", "Illustrator", "Adobe XD"]
     }]
 }
