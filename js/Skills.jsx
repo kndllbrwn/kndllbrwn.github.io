@@ -6,14 +6,13 @@ const Skills = React.createClass({
   render () {
     return (
        <div> 
-       <Title header="Experience"/>
+       <Title header="Skills"/>
         {this.props.skills
-            .map((skill) => {
+            .map((skillset) => {
               return (
                 <dl>
-                  <dt>  Front End Development:</dt>
-                  <dd>Javascript, React, angularJS, jQuery, 
-                  HTML, CSS, Meteor, SASS, Materialize</dd>
+                  <dt>  {skillset.skill}:</dt>
+                  <dd>{skillset.list.map((role) => { return <span className="skill">{role}</span>})}</dd>
                 </dl>
               )
         })}

@@ -5,32 +5,25 @@ import preload from '../public/jobs.json'
 import '../public/style.css'
 
 import Title from './Title'
+import Header from './Header'
+import Bio from './Bio'
 import Experience from './Experience'
+import Skills from './Skills'
+import Education from './Education'
+import Interests from './Interests'
 
 const App = React.createClass({
   render(){
     return (
       <div>
-        <header>
-          <h1>Kendall L. Brown, ICP-PRG</h1>  
-          <aside>
-            <ul>
-              <li><a href="mailto:kndllbrwn1914@gmail.com"><i className="fa fa-envelope"></i>kndllbrwn1914@gmail</a> </li>
-              <li><a href="https://www.linkedin.com/in/KndllBrwn" target="_blank"><i className="fa fa-linkedin-square"></i>KndllBrwn</a> </li>
-              <li><a href="https://github.com/kndllbrwn" target="_blank"><i className="fa fa-github"></i>kndllbrwn</a></li>
-              <li><a href="https://www.kb3itsolutions.com" target="_blank"><i className="fa fa-laptop"></i>Past Website</a></li>
-            </ul>
-          </aside>
-        </header>
-        
-        <hr/>
-        <blockquote>I am a full-stack developer with a long history of providing IT solutions to improve the relationships between clients and end-users. This takes the form of being an advocate for User Experience and best practices in modern development.</blockquote>
-        <hr/>
+        <Header/>
+        <Bio/>
         <div className="flex-container">
           <section className="flex-item1">
             <Experience jobs={preload.jobs}/>
           </section>
           <section className="flex-item2">
+          <Skills skills={preload.skills}/>
             <dl>
               <Title header="Skills"/>
               <dt>  Front End Development:</dt>
@@ -47,24 +40,9 @@ const App = React.createClass({
               <dd>WordPress,  Drupal</dd>
               <dt>  Graphic Design</dt>
               <dd>Photoshop, Illustrator, Adobe XD</dd>
-            </dl>
-
-            <dl>
-              <Title header="Education"/>
-              <dt>  General Assembly</dt>
-              <dd>Graduate, UX Day Camp</dd>
-              <dt>  Pennsylvania State University </dt>
-              <dd>B.A., Sociology</dd>
-              <dd>Minor degree, Information Science and Statistical Analysis</dd>
-            </dl>
-            <div id="Interests">
-              <ul>
-                <Title header="Interests & Activities"/>
-                <li>Volunteerism and change management(President of Penn State Alumni AIG)</li>
-                <li>  Consumer advocacy and education awareness</li>
-                <li>Health and fitness enthusiast</li>
-              </ul>
-            </div>
+            </dl>  
+            <Education/>      
+            <Interests/>
           </section>  
         </div> 
       </div>

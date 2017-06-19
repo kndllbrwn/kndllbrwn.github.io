@@ -31,16 +31,22 @@
         "description": ["Created and maintained pages for largest political science association in U.S.", "Drafted HTML email campaigns", "Managed APSA Mentorship program including recruitment, matching, surveying, and evaluations"]
     }],
     "skills": [{
-      "Front End Development": ["Javascript", "React", "Angular", "jQuery", "HTML", "CSS", "Meteor", "SASS", "Materialize"]
+      "skill": "Front End Development",
+      "list": ["Javascript", "React", "Angular", "jQuery", "HTML", "CSS", "Meteor", "SASS", "Materialize"]
     }, {
-      "Back End Development": ["NodeJS", "Ruby on Rails", "Meteor", "Express", "Connect", "NPM", "Yarn"]
+      "skill": "Back End Development",
+      "list": ["NodeJS", "Ruby on Rails", "Meteor", "Express", "Connect", "NPM", "Yarn"]
     }, {
-      "Testing": ["Mocha", "Karma" ]
+      "skill": "Testing",
+      "list": ["Mocha", "Karma"]
     }, {
-      "Databases": ["SQLite", "MongoDB", "ActiveRecord", "Noah", "Datatel", "Symplicity"]
+      "skill": "Databases",
+      "list": ["SQLite", "MongoDB", "ActiveRecord", "Noah", "Datatel", "Symplicity"]
     }, {
-      "Content Management Systems": ["WordPress", "Drupal"]
+      "skill": "Content Management Systems",
+      "list": ["WordPress", "Drupal"]
     }, {
-      "Graphic Design": ["Photoshop", "Illustrator", "Adobe XD"]
+      "skill": "Graphic Design",
+      "list": ["Photoshop", "Illustrator", "Adobe XD"]
     }]
 }
