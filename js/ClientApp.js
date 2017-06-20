@@ -4,13 +4,13 @@ import preload from '../public/jobs.json'
 
 import '../public/style.css'
 
-import Title from './Title'
-import Header from './Header'
-import Bio from './Bio'
-import Experience from './Experience'
-import Skills from './Skills'
-import Education from './Education'
-import Interests from './Interests'
+import Title from './components/Title'
+import Header from './components/Header'
+import Bio from './components/Bio'
+import Experience from './components/Experience'
+import Skills from './components/Skills'
+import Education from './components/Education'
+import Interests from './components/Interests'
 
 const App = React.createClass({
   render(){
@@ -24,7 +24,8 @@ const App = React.createClass({
           </section>
           <section className="flex-item2">
           <Skills skills={preload.skills}/>
-            <dl>
+            {/* The skill component is breaking layout. Let's see if bootstrap can help
+              <dl>
               <Title header="Skills"/>
               <dt>  Front End Development:</dt>
               <dd>Javascript, React, angularJS, jQuery, 
@@ -40,7 +41,7 @@ const App = React.createClass({
               <dd>WordPress,  Drupal</dd>
               <dt>  Graphic Design</dt>
               <dd>Photoshop, Illustrator, Adobe XD</dd>
-            </dl>  
+            </dl> */} 
             <Education/>      
             <Interests/>
           </section>  
