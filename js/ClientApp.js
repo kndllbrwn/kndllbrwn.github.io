@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import preload from '../public/jobs.json'
+import { Grid, Row, Col } from 'react-bootstrap'
 
 import '../public/style.css'
 
