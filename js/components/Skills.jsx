@@ -12,7 +12,7 @@ const Skills = React.createClass({
               return (
                 <dl>
                   <dt>  {skillset.skill}:</dt>
-                  <dd>{skillset.list.map((role) => { return <span className="skill">{role}</span>})}</dd>
+                  <dd>{skillset.list.map((role) => { return <li className="skill">{role}</li>})}</dd>
                 </dl>
               )
         })}

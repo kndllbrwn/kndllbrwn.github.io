@@ -16,7 +16,7 @@ import Interests from './components/Interests'
 const App = React.createClass({
   render(){
     return (
-      <Grid>
+      <Grid fluid>
         <Row>
           <Col xs={12}>
             <Header/>
