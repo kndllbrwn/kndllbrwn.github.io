@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import preload from '../public/jobs.json'
-import { Grid, Row, Col } from 'react-bootstrap'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import '../public/style.css'
 
@@ -19,11 +19,16 @@ const App = React.createClass({
       <div>
         <Header/>
         <Bio/>
-        <div className="flex-container">
-          <section className="flex-item1">
+        <div className="container">
+        <Grid fluid>
+        <Row>
+        <Col xs={12} md={8}>
+          <section>
             <Experience jobs={preload.jobs}/>
           </section>
-          <section className="flex-item2">
+        </Col>
+        <Col xs={6} md={4}>
+          <section>
           <Skills skills={preload.skills}/>
             {/* The skill component is breaking layout. Let's see if bootstrap can help
               <dl>
@@ -45,7 +50,10 @@ const App = React.createClass({
             </dl> */} 
             <Education/>      
             <Interests/>
-          </section>  
+          </section> 
+          </Col> 
+          </Row>
+          </Grid>
         </div> 
       </div>
       
