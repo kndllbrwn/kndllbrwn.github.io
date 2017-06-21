@@ -36,7 +36,6 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: /flexboxgrid/,
         use: [
           'style-loader',
           {

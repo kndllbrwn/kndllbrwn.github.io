@@ -16,9 +16,14 @@ import Interests from './components/Interests'
 const App = React.createClass({
   render(){
     return (
-      <div>
-        <Header/>
-        <Bio/>
+      <Grid>
+        <Row>
+          <Col xs={12}>
+            <Header/>
+            <Bio/>
+          </Col>
+        </Row>
+      
         <div className="flex-container">
           <section className="flex-item1">
             <Experience jobs={preload.jobs}/>
@@ -47,7 +52,7 @@ const App = React.createClass({
             <Interests/>
           </section>  
         </div> 
-      </div>
+      </Grid>
       
     )
   }
