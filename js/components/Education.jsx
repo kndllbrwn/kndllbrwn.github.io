@@ -6,9 +6,9 @@ const Education = React.createClass({
     return (
       <dl>
         <Title header='Education' />
-        <dt>  General Assembly</dt>
+        <dt><strong>General Assembly</strong></dt>
         <dd>Graduate, UX Day Camp</dd>
-        <dt>  Pennsylvania State University </dt>
+        <dt><strong>Pennsylvania State University</strong></dt>
         <dd>B.A., Sociology</dd>
         <dd>Minor degree, Information Science and Statistical Analysis</dd>
       </dl>
