@@ -1,0 +1,162 @@
+[33mcommit bf30d2639dbfdaf510454dcbbbded5c1cb81b2f8[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Wed Jun 21 21:47:41 2017 -0400
+
+    Touched index
+
+[33mcommit 8639459e4809053d1c4f3e62964f28b526f72e09[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Wed Jun 21 21:38:43 2017 -0400
+
+    Touched index and applied linging fixes
+
+[33mcommit 3e57a2e7adb371d3f7c6ee3814966d8b1ff178f9[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Wed Jun 21 21:31:54 2017 -0400
+
+    Updated education component
+
+[33mcommit 6a10bb861d297e9638bfcb58326238d6ea179324[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Wed Jun 21 21:21:16 2017 -0400
+
+    More mobile optimization
+
+[33mcommit 12bd17ddee94e5a6015d67cc23edf78cddf324c0[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Tue Jun 20 21:32:29 2017 -0400
+
+    Used a list fix layout issues, will find more longterm fix
+
+[33mcommit d5f69e574e4619b9533a41be88bea77498099169[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Tue Jun 20 21:16:33 2017 -0400
+
+    Set up flexbox module and started using components
+
+[33mcommit 2e2cfca71cf7887cc921959200bf986f29b738a6[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Tue Jun 20 20:59:13 2017 -0400
+
+    Import flexbox module
+
+[33mcommit 085f097ec0ca42432a03aefc45af731e54530f8a[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Mon Jun 19 21:22:35 2017 -0400
+
+    Move apps to components and prepared to incorporate bootstrap for grid layout
+
+[33mcommit 49fd1fa5eb575706341b9c25364ffba404a966b6[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 18 21:49:51 2017 -0400
+
+    More data in json, more componentization, style updates
+
+[33mcommit fdf43f23bef4c029fadad04593c4bf1316fb727d[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 18 19:30:39 2017 -0400
+
+    Updated json file, style sheet, and potential components
+
+[33mcommit 967d30f41727c0623d9073aa3d91747f7e52bbe6[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sat Jun 17 21:56:01 2017 -0400
+
+    Set up experience component use data in UI
+
+[33mcommit b544b11b71effb74cb1a09733c387a883591be8a[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Wed Jun 14 20:29:04 2017 -0400
+
+    Duplicated jobs into json to use for MVC
+
+[33mcommit 66aa3ddd3d7773bc97dc5966cd3f9109cbce72d5[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Wed Jun 14 04:34:06 2017 -0400
+
+    Set up webpack to bundle JSX files
+
+[33mcommit 9ec669d59e00418a7cac602be3cdd759ff513452[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Tue Jun 13 20:35:26 2017 -0400
+
+    Refactored to bundle css into javascript
+
+[33mcommit 413afc503971c01b546973b9ed334076c5fc9711[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Mon Jun 12 04:32:43 2017 -0400
+
+    Refactored section titles into reusable components
+
+[33mcommit 0a166aa5680d6e7a0704e22811ad61f9d5a47737[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 11 00:54:12 2017 -0400
+
+    React'ified' the site
+
+[33mcommit ccf4d08f34c7348c85c876826eb9eea1c27ac53b[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 11 00:20:40 2017 -0400
+
+    Set up webpack to bundle react into app
+
+[33mcommit 1bc890f8dfbee411691c7bcf1cc78729d425a112[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Thu Jun 8 21:19:55 2017 -0400
+
+    Updated links in header
+
+[33mcommit 4d3dbf36850a13a6bf61712585c5157dd8c2d31a[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Thu Jun 8 20:36:09 2017 -0400
+
+    Temporary architecture due to GH pages problem
+
+[33mcommit 5bd3cdccda9ee143201a8d614d1dadaa5203c0c4[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Thu Jun 8 20:20:17 2017 -0400
+
+    Moving architecture to original state
+
+[33mcommit d87f51ff972da971f6204b0936418c44ae7da61a[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Thu Jun 8 20:14:23 2017 -0400
+
+    Moved index back to root
+
+[33mcommit ae65a8d0d574c92e0a8cc1d4b80fd4fada82278e[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Wed Jun 7 21:51:17 2017 -0400
+
+    Experimenting with publishing model
+
+[33mcommit e65e3675846584dbf3da059924c01910c850f3bd[m
+Merge: 6933e02 217b79d
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 4 22:11:19 2017 -0400
+
+    Merge branches 'master' and 'master' of github.com:kndllbrwn/kndllbrwn.github.io
+
+[33mcommit 6933e029bb73c98c04b0a42e074dea156a3ab577[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 4 22:09:09 2017 -0400
+
+    Exported css into external file to test differing static file architecture
+
+[33mcommit 217b79d48ea4c16d7302e47a7836e3dac59a0674[m
+Author: Kendall Brown <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 4 18:48:49 2017 -0400
+
+    Create README.md
+
+[33mcommit 46f69c000c6f986898442ca29e81f041508446a5[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 4 18:31:43 2017 -0400
+
+    Added hyperlinks to past employers
+
+[33mcommit eb61b0f9ffd8154c000165872f3e3598a3089181[m
+Author: kndllbrwn <kndllbrwn1914@gmail.com>
+Date:   Sun Jun 4 16:59:25 2017 -0400
+
+    First commit, last repository got nuked by blogging package
