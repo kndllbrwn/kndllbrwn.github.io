@@ -1,5 +1,4 @@
 import React from 'react'
-import Title from './Title'
 
 const Header = React.createClass({
   render () {

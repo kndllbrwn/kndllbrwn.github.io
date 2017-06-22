@@ -5,7 +5,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import '../public/style.css'
 
-import Title from './components/Title'
 import Header from './components/Header'
 import Bio from './components/Bio'
 import Experience from './components/Experience'
@@ -51,11 +50,11 @@ const App = React.createClass({
                   <dt>  Graphic Design</dt>
                   <dd>Photoshop, Illustrator, Adobe XD</dd>
                 </dl> */}
-                <Education />
-                <Interests />
+              <Education />
+              <Interests />
             </Col>
           </Row>
-          {/*<Row>
+          {/* <Row>
             <Col xs={6}>
               <Education />
             </Col>
@@ -63,7 +62,7 @@ const App = React.createClass({
               <Interests />
 
             </Col>
-          </Row>*/}
+          </Row> */}
         </div>
       </Grid>
 

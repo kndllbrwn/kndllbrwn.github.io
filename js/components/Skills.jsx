@@ -1,6 +1,5 @@
 import React from 'react'
 import Title from './Title'
-import Skillset from './Skillset'
 
 const Skills = React.createClass({
   render () {
@@ -12,7 +11,7 @@ const Skills = React.createClass({
               return (
                 <dl>
                   <dt><strong>{skillset.skill}</strong></dt>
-                  <dd>{skillset.list.map((role) => { return <span className='skill'>{role}<wbr/></span> })}</dd>
+                  <dd>{skillset.list.map((role) => { return <span className='skill'>{role}<wbr /></span> })}</dd>
                 </dl>
               )
             })}
