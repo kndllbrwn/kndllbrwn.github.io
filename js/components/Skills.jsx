@@ -5,18 +5,18 @@ import Skillset from './Skillset'
 const Skills = React.createClass({
   render () {
     return (
-       <div> 
-       <Title header="Skills"/>
+      <div>
+        <Title header='Skills' />
         {this.props.skills
             .map((skillset) => {
               return (
                 <dl>
-                  <dt>  {skillset.skill}:</dt>
-                  <dd>{skillset.list.map((role) => { return <li className="skill">{role}</li>})}</dd>
+                  <dt><strong>{skillset.skill}</strong></dt>
+                  <dd>{skillset.list.map((role) => { return <span className='skill'>{role}<wbr/></span> })}</dd>
                 </dl>
               )
-        })}
-       </div>
+            })}
+      </div>
     )
   }
 })

@@ -5,7 +5,7 @@ const Education = React.createClass({
   render () {
     return (
       <dl>
-        <Title header="Education"/>
+        <Title header='Education' />
         <dt>  General Assembly</dt>
         <dd>Graduate, UX Day Camp</dd>
         <dt>  Pennsylvania State University </dt>
