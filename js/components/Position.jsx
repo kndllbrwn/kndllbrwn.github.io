@@ -11,7 +11,7 @@ const Position = React.createClass({
           fsdfdfdf
         </details>*/}
         <p><i><a href={link} target='_blank'>{company}</a></i>                                                                  <span>{year}</span></p>
-        {description.map((role) => { return <li>{role}</li> })}
+        {description.map((role) => { return <li key={role}>{role}</li> })}
       </ul>
     )
   }

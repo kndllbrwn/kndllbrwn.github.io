@@ -9,9 +9,9 @@ const Skills = React.createClass({
         {this.props.skills
             .map((skillset) => {
               return (
-                <dl>
+                <dl key={skillset.skill}>
                   <dt><strong>{skillset.skill}</strong></dt>
-                  <dd>{skillset.list.map((role) => { return <span className='skill'>{role}<wbr /></span> })}</dd>
+                  <dd>{skillset.list.map((role) => { return <span key={role} className='skill'>{role}<wbr /></span> })}</dd>
                 </dl>
               )
             })}
