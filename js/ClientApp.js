@@ -32,24 +32,6 @@ const App = React.createClass({
             <Col xs={3}>
 
               <Skills skills={preload.skills} />
-              {/* The skill component is breaking layout. Let's see if bootstrap can help
-                  <dl>
-                  <Title header="Skills"/>
-                  <dt>  Front End Development:</dt>
-                  <dd>Javascript, React, angularJS, jQuery,
-                  HTML, CSS, Meteor, SASS, Materialize</dd>
-                  <dt>  Back End Development:</dt>
-                  <dd>NodeJS, Ruby on Rails, Meteor,
-                  Express, Connect, NPM, Yarn</dd>
-                  <dt>  Testing:</dt>
-                  <dd>Mocha, Karma</dd>
-                  <dt>  Databases</dt>
-                  <dd>SQLite, MongoDB, ActiveRecord, Noah, Datatel, Symplicity</dd>
-                  <dt>  Content Management Systems: </dt>
-                  <dd>WordPress,  Drupal</dd>
-                  <dt>  Graphic Design</dt>
-                  <dd>Photoshop, Illustrator, Adobe XD</dd>
-                </dl> */}
               <Education />
               <Interests />
             </Col>
