@@ -1,31 +1,36 @@
 {
     "jobs": [{
-        "title": "Engineer",
+        "title": "Software Engineer",
         "company": "Booz Allen Hamilton",
+        "about": "In this role I helped with the tranformation migration for a large federal agency assisting with the publishing model, style guides, UX research, and front end development",
         "link": "https://www.boozallen.com/",
         "year": "June 2016 - Present",
         "description": ["Create technical documentation for client and consultants on project", "Log bugs in production code", "Review code against style guide for compliance", "Update production code for client", "Conduct 508 compliance tests on static files", "Assist with IRS with transformation migration of largest federal website in history"]
     }, {
         "title": "Freelance Developer",
         "company": "International Traveler Assurance, Phi Beta Sigma",
+        "about": "I spent a year doing freelance work part time and then full time. This gave me more time to grow as a self guided developer that needs to address client needs. During this time I was able to experiment and use modern technologies such as Angular and Ruby on Rails.",
         "link": "",
         "year": "06/15 – 06/16",
         "description": ["Created custom HTML, CSS, and JavaScript for clients", "Generated database of alumni brothers stored in a JSON file", "Developed searchable application of brothers using MVC framework/Angular application pulling from JSON file"]
     }, {
         "title": "Manager of Web Technologies (Contract)",
         "company": "Hearing Loss Association of America",
+        "about": "This was a brief contract working for a high traffic nonprofit website. Here I created various digital solutions for end users including photoshop images, email campaings, and web pages.",
         "link": "https://www.hearingloss.org/",
         "year": "11/15 – 12/15",
         "description": ["Created and updated pages for website with over 500,000 annual visitors", "Created several html email campaigns messaging thousands of members and constituents", "Utilized Adobe Photoshop to create new slide for Association homepage"]
     }, {
         "title": "Resources Coordinator",
         "company": "American University Washington College of Law",
+        "about": "Working in the AUWCL Office of Professional Development I worked with several counselors to update and revamp pages for the department, this included UX consulting and front end editing. A key deliverable for this position was a new user friendly landing page and navigation for end users.",
         "link": "https://www.wcl.american.edu/career/",
         "year": "05/14 – 11/15",
         "description": ["Designed front-end content for Office of Career & Professional Development", "Assisted internal stakeholders with modernization of pages by improving UX, IA, and content design decisions", "Drafted messaging content and pages for highly public office campaigns"]
     }, {
         "title": "Program Assistant",
         "company": "American Political Science Association",
+        "about": "In my first position out of college I assisted the non profit, APSA. In addition to programatic and database management roles I used my Information Science background gained at Pennsylvania State to assist with web pages and email campaigns.",
         "link": "https://www.apsanet.org/",
         "year": "03/12 – 11/13",
         "description": ["Created and maintained pages for largest political science association in U.S.", "Drafted HTML email campaigns", "Managed APSA Mentorship program including recruitment, matching, surveying, and evaluations"]

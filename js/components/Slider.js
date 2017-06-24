@@ -7,7 +7,11 @@ const Carousel = React.createClass({
       dots: true,
       infinite: true,
       lazyLoad: true,
+      slidesToShow:1,
       speed: 500
+     /* leaving for mobile slider inspiration
+     vertical: true,
+      verticalSwiping: true */
     };
     return (
       <Slider {...settings}>
