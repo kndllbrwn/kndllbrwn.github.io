@@ -5,12 +5,14 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import '../public/style.css'
 
+
 import Header from './components/Header'
 import Bio from './components/Bio'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import Interests from './components/Interests'
+import Carousel from './components/Slider'
 
 const App = React.createClass({
   render () {
@@ -26,7 +28,7 @@ const App = React.createClass({
         <div className='flex-container'>
           <Row>
             <Col xs={9}>
-
+              <Carousel />
               <Experience jobs={preload.jobs} />
             </Col>
             <Col xs={3}>

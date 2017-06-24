@@ -1,3 +1,9 @@
+/*Needed for flex-box and react carousel to get along*/
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
 body {
       width: 60em;
       margin: auto;
