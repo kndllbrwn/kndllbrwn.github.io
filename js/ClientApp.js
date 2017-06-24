@@ -28,7 +28,7 @@ const App = React.createClass({
         <div className='flex-container'>
           <Row>
             <Col xs={9}>
-              <Carousel />
+              {/*<Carousel />*/}
               <Experience jobs={preload.jobs} />
             </Col>
             <Col xs={3}>
