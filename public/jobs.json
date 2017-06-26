@@ -35,6 +35,9 @@
         "year": "03/12 – 11/13",
         "description": ["Created and maintained pages for largest political science association in U.S.", "Drafted HTML email campaigns", "Managed APSA Mentorship program including recruitment, matching, surveying, and evaluations"]
     }],
+    "projects" : [
+      
+    ],
     "skills": [{
       "skill": "Front End Development",
       "list": ["Javascript", "React", "Angular", "jQuery", "HTML", "CSS", "Meteor", "SASS", "Materialize"]
