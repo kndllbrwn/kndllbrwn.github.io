@@ -35,8 +35,11 @@
         "year": "03/12 – 11/13",
         "description": ["Created and maintained pages for largest political science association in U.S.", "Drafted HTML email campaigns", "Managed APSA Mentorship program including recruitment, matching, surveying, and evaluations"]
     }],
-    "projects" : [
-      
+    "projects" : [{
+      "title": "Chat App",
+      "Description": "An application that allows multiple users to create different chat rooms inside the application and engage in real time communication.",
+      "software": ["NodeJS", "Socket.io", "jQuery", "mustache.js"]
+    }
     ],
     "skills": [{
       "skill": "Front End Development",
