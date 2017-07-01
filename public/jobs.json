@@ -53,7 +53,25 @@
       "software": ["jQuery", "CSS"],
       "link": "http://kb3itsolutions.com/LL/chnnl1914.html",
       "image": "3DGallery"
-    },
+    },{
+      "title": "Link Shortener",
+      "Description": "A web app that takes a link provided by the user and creates truncated link they can use to paste to guide people to the original link.",
+      "software": ["NodeJS", "React", "Meteor"],
+      "link": "https://score-keep-brown.herokuapp.com/",
+      "image": "ShortLink"
+    }, {
+      "title": "PSD Conversionr",
+      "Description": "A web page created to create a functional page from a PSD.",
+      "software": ["HTML", "CSS", "jQuery"],
+      "link": "http://kb3itsolutions.com/portfolio/aspph.html",
+      "image": "PSDConversion"
+    }, {
+      "title": "Online Calculator",
+      "Description": "A jquery calculator",
+      "software": ["HTML", "CSS", "jQuery"],
+      "link": "http://kb3itsolutions.com/jQueryCalc.html",
+      "image": "OnlineCalc"
+    }
     ],
     "skills": [{
       "skill": "Front End Development",
