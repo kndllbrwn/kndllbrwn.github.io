@@ -1,5 +1,9 @@
+import preload from '../../public/jobs.json'
 import React from 'react'
 import Slider from 'react-slick'
+
+import Experience from './Experience'
+import Examples from './Examples'
 
 const Carousel = React.createClass({
   render(){
@@ -15,12 +19,9 @@ const Carousel = React.createClass({
     };
     return (
       <Slider {...settings}>
-        <div><h3>1</h3></div>
-        <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
-        <div><h3>4</h3></div>
-        <div><h3>5</h3></div>
-        <div><h3>6</h3></div>
+        <div><Experience jobs={preload.jobs} /></div>
+        <div><Examples projects={preload.projects} /></div>
+        
       </Slider>
     );
   }

@@ -8,11 +8,14 @@ import '../public/style.css'
 
 import Header from './components/Header'
 import Bio from './components/Bio'
-import Experience from './components/Experience'
-import Skills from './components/Skills'
-import Education from './components/Education'
-import Interests from './components/Interests'
 import Carousel from './components/Slider'
+import Education from './components/Education'
+import Examples from './components/Examples'
+import Experience from './components/Experience'
+import Interests from './components/Interests'
+import Skills from './components/Skills'
+
+
 
 const App = React.createClass({
   render () {
@@ -28,8 +31,9 @@ const App = React.createClass({
         <div className='flex-container'>
           <Row>
             <Col xs={9}>
-              {/*<Carousel />*/}
-              <Experience jobs={preload.jobs} />
+              <Carousel />
+              {/*<Experience jobs={preload.jobs} />
+              <Examples projects={preload.projects} />*/}
             </Col>
             <Col xs={3}>
 
