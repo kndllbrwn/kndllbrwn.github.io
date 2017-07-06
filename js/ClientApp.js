@@ -71,11 +71,11 @@ const App = React.createClass({
               >
                 <div>
                   
-                  <button type="button" onClick={this.showBack}>Examples</button>
+                  <button className="flipButton" type="button" onClick={this.showBack}>Examples</button>
                    <Experience jobs={preload.jobs} /> 
                 </div>
                 <div>
-                  <button type="button" ref="backButton" onClick={this.showFront}>Experience</button>
+                  <button className="flipButton" type="button" ref="backButton" onClick={this.showFront}>Experience</button>
                   <Examples projects={preload.projects} />
                 </div>
               </FlipCard>
