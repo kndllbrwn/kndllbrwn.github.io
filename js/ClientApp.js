@@ -69,13 +69,13 @@ const App = React.createClass({
                 onFlip={this.handleOnFlip}
                 onKeyDown={this.handleKeyDown}
               >
-                <div>
+                <div className="flipCard_div">
                   
-                  <button className="flipButton" type="button" onClick={this.showBack}>Examples</button>
+                  <button className="flipCard_button" type="button" onClick={this.showBack}>Examples</button>
                    <Experience jobs={preload.jobs} /> 
                 </div>
-                <div>
-                  <button className="flipButton" type="button" ref="backButton" onClick={this.showFront}>Experience</button>
+                <div className="flipCard_div">
+                  <button className="flipCard_button" type="button" ref="backButton" onClick={this.showFront}>Experience</button>
                   <Examples projects={preload.projects} />
                 </div>
               </FlipCard>

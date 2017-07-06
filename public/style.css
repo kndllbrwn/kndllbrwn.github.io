@@ -119,9 +119,20 @@ i {
 }
 /* End Scrollbar changes */
 
-.flipButton {
+.flipCard_div img{
+  text-align: center;
+}
+
+.ReactFlipCard{
+  width: 650px;
+}
+
+.flipCard_button {
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
   cursor: pointer;
+  position: absolute;
+  left: 210px;
+  top: 33px;
 }
