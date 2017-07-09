@@ -162,7 +162,7 @@ i {
     left: 0;
     padding-top: 1em; 
     position: fixed;
-    width: 100%;    
+    /*width: 100%;    */
 }
 .nav i {
   color: white;
