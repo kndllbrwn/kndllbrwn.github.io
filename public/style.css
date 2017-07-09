@@ -143,3 +143,28 @@ i {
   left: 210px;
   top: 33px;
 }
+
+@media (max-width: 375px) {
+
+.container-fluid {
+  font-size: 2em;
+}
+.nav {
+    background: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    height: 4em;
+    justify-content: space-between;
+    left: 0;
+    padding-top: 1em; 
+    position: fixed;
+    width: 100%;    
+}
+.nav i {
+  color: white;
+  font-size: 2.5em;
+  margin-left: 0.5em;
+  margin-right: .5em;
+}
+}

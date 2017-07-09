@@ -1,29 +1,32 @@
-import React from 'react'
-import Title from './Title'
-
+import React from 'react';
+import Title from './Title';
 
 const Examples = React.createClass({
-  render () {
-    const { title } = this.props
+  render() {
+    const { title } = this.props;
     return (
       <div>
-        <Title header='Examples' />
+        <Title header="Examples" />
         <div id="experience">
-          
-          {this.props.projects
-            .map((project) => {
-              return (
-                <div key={project.title}>
-                  <h3 className="project__title">{project.title}</h3>
-                  <a target="_blank" href={project.link}><img className="projectImage" src={`/public/images/${project.image}.png`}/></a>
-                  <p>{project.description}</p>
-                </div>
-              )
-            })}
+          {this.props.projects.map(project => {
+            return (
+              <div key={project.title}>
+                <h3 className="project__title">
+                  {project.title}
+                </h3>
+                <a target="_blank" href={project.link}>
+                  <img className="projectImage" src={`/public/images/${project.image}.png`} />
+                </a>
+                <p>
+                  {project.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
-    )
+    );
   }
-})
+});
 
-export default Examples
+export default Examples;

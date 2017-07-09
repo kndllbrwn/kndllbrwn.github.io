@@ -1,106 +1,61 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import preload from '../public/jobs.json'
-import { Grid, Row, Col } from 'react-flexbox-grid'
-import FlipMove from 'react-flip-move'
-import FlipCard from 'react-flipcard'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import preload from '../public/jobs.json';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import FlipMove from 'react-flip-move';
+import FlipCard from 'react-flipcard';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 
-import '../public/style.css'
+import '../public/style.css';
 
+import Header from './components/Header';
+import Bio from './components/Bio';
+import Carousel from './components/Slider';
+import Education from './components/Education';
+import Examples from './components/Examples';
+import Experience from './components/Experience';
+import Interests from './components/Interests';
+import Skills from './components/Skills';
 
-import Header from './components/Header'
-import Bio from './components/Bio'
-import Carousel from './components/Slider'
-import Education from './components/Education'
-import Examples from './components/Examples'
-import Experience from './components/Experience'
-import Interests from './components/Interests'
-import Skills from './components/Skills'
- 
 const App = React.createClass({
-  getInitialState() {
-    return {
-      isFlipped: false
-    };
-  },
-
-  showBack() {
-    this.setState({
-      isFlipped: true
-    });
-  },
-
-  showFront() {
-    this.setState({
-      isFlipped: false
-    });
-  },
-
-  handleOnFlip(flipped) {
-    if (flipped) {
-      this.refs.backButton.getDOMNode().focus();
-    }
-  },
-
-  handleKeyDown(e) {
-    if (this.state.isFlipped && e.keyCode === 27) {
-      this.showFront();
-    }
-  },
-  render () {
+  render() {
     return (
-      <Grid fluid>
-        <Row>
-          <Col xs={12}>
-            <Header />
-            <Bio />
-          </Col>
-        </Row>
-
-        <div className='flex-container'>
+      <BrowserRouter>
+        <Grid fluid>
+          <nav className="nav">
+            <Link to="/">
+              <i className="fa fa-history" />
+            </Link>
+            <Link to="/examples">
+              <i className="fa fa-code" />
+            </Link>
+            <Link to="/education">
+              <i className="fa fa-graduation-cap" />
+            </Link>
+            <Link to="/skills">
+              <i className="fa fa-certificate" />
+            </Link>
+            <Link to="/interests">
+              <i className="fa fa-puzzle-piece" />
+            </Link>
+          </nav>
           <Row>
-            <Col xs={9}>
-              {/*{<Carousel />
-              <Experience jobs={preload.jobs} />
-              <Examples projects={preload.projects} />*/}
-              <FlipCard
-                disabled={true}
-                flipped={this.state.isFlipped}
-                onFlip={this.handleOnFlip}
-                onKeyDown={this.handleKeyDown}
-              >
-                <div className="flipCard_div">
-                  
-                  <button className="flipCard_button" type="button" onClick={this.showBack}>See<br/>Examples</button>
-                   <Experience jobs={preload.jobs} /> 
-                </div>
-                <div className="flipCard_div">
-                  <button className="flipCard_button" type="button" ref="backButton" onClick={this.showFront}>See<br/>Experience</button>
-                  <Examples projects={preload.projects} />
-                </div>
-              </FlipCard>
-            </Col>
-            <Col xs={3}>
-
-              <Skills skills={preload.skills} />
-              <Education />
-              <Interests />
+            <Col xs={12}>
+              <Header />
+              <Bio />
             </Col>
           </Row>
-          {/* <Row>
-            <Col xs={6}>
-              <Education />
-            </Col>
-            <Col xs={6}>
-              <Interests />
-
-            </Col>
-          </Row> */}
-        </div>
-      </Grid>
-
-    )
+          <Switch>
+            <Route exact path="/" component={props => <Experience jobs={preload.jobs} {...props} />} />
+            <Route path="/examples" component={props => <Examples projects={preload.projects} {...props} />} />
+            <Route path="/education" component={Education} />
+            <Route path="/skills" component={props => <Skills skills={preload.skills} {...props} />} />
+            <Route path="/interests" component={Interests} />
+          </Switch>
+        </Grid>
+      </BrowserRouter>
+    );
   }
-})
+});
 
-ReactDOM.render(React.createElement(App), document.getElementById('app'))
+ReactDOM.render(React.createElement(App), document.getElementById('app'));

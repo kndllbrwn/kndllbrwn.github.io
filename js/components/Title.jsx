@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const Title = React.createClass({
-  render () {
+  render() {
     return (
       <h2>
         {this.props.header}
       </h2>
-    )
+    );
   }
-})
+});
 
-export default Title
+export default Title;
