@@ -144,7 +144,7 @@ i {
   top: 33px;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 769px) {
 .header_brandingLg {
   display: none;
 }
@@ -162,7 +162,7 @@ i {
     left: 0;
     padding-top: 1em; 
     position: fixed;
-    /*width: 100%;    */
+    width: 100%;    
 }
 .nav i {
   color: white;
