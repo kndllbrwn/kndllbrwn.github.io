@@ -144,7 +144,7 @@ i {
   top: 33px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
 
 .container-fluid {
   font-size: 2em;
