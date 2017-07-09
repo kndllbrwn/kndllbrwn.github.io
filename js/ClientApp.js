@@ -10,7 +10,7 @@ import '../public/style.css';
 
 import Header from './components/Header';
 import Bio from './components/Bio';
-import Carousel from './components/Slider';
+import Desktop from './components/Desktop';
 import Education from './components/Education';
 import Examples from './components/Examples';
 import Experience from './components/Experience';
