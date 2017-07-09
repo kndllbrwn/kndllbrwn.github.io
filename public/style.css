@@ -145,6 +145,9 @@ i {
 }
 
 @media (max-width: 475px) {
+.header_brandingLg {
+  display: none;
+}
 
 .container-fluid {
   font-size: 2em;

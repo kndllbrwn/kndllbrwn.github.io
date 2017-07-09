@@ -9,22 +9,22 @@ const Header = React.createClass({
           <ul>
             <li>
               <a href="mailto:kndllbrwn1914@gmail.com">
-                <i className="fa fa-envelope" />kndllbrwn1914@gmail
-              </a>{' '}
+                <i className="fa fa-envelope" /><span className="header_brandingLg">kndllbrwn1914@gmail</span>
+              </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/KndllBrwn" target="_blank">
-                <i className="fa fa-linkedin-square" />KndllBrwn
-              </a>{' '}
+                <i className="fa fa-linkedin-square" /><span className="header_brandingLg">KndllBrwn</span>
+              </a>
             </li>
             <li>
               <a href="https://github.com/kndllbrwn" target="_blank">
-                <i className="fa fa-github" />kndllbrwn
+                <i className="fa fa-github" /><span className="header_brandingLg">KndllBrwn</span>
               </a>
             </li>
             <li>
               <a href="https://www.kb3itsolutions.com" target="_blank">
-                <i className="fa fa-laptop" />Past Website
+                <i className="fa fa-laptop" /><span className="header_brandingLg">Past Website</span>
               </a>
             </li>
           </ul>
