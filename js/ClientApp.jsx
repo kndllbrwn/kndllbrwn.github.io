@@ -23,7 +23,8 @@ const App = React.createClass({
       <Grid fluid>
         <BrowserRouter>
           <div className="app">
-          <Row><Col xs={12}>
+          <Row>
+          <Col xs={12}>
           <nav className="nav">
               <Link to="/">
                 <i className="fa fa-history" />
