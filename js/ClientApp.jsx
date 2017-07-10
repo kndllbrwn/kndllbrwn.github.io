@@ -21,8 +21,8 @@ const App = React.createClass({
   render() {
     return (
       <Grid fluid>
-        <BrowserRouter>
-          <div className="app">
+        <div className="app">
+          <BrowserRouter>
             <nav className="nav">
               <Link to="/">
                 <i className="fa fa-history" />
@@ -53,8 +53,8 @@ const App = React.createClass({
               <Route path="/skills" component={props => <Skills skills={preload.skills} {...props} />} />
               <Route path="/interests" component={Interests} />
             </Switch>
-          </div>  
-        </BrowserRouter>
+          </BrowserRouter>
+        </div>
       </Grid>
     );
   }

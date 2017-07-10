@@ -144,12 +144,10 @@ i {
   top: 33px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 415px) {
 
   body {
       width: 40em;
-      margin: auto;
-      background-color: cornsilk;
     }
 
   .header_brandingLg {
