@@ -177,4 +177,12 @@ i {
     margin-left: 0.5em;
     margin-right: .5em;
   }
+
+  #education {
+    height: 700px
+  }
+
+  #interests {
+  height: 700px
+}
 }
