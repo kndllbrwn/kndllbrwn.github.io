@@ -4,7 +4,7 @@ import Title from './Title';
 const Skills = React.createClass({
   render() {
     return (
-      <div>
+      <div className="componentBody">
         <Title header="Skills" />
         {this.props.skills.map(skillset => {
           return (

@@ -5,9 +5,9 @@ const Examples = React.createClass({
   render() {
     const { title } = this.props;
     return (
-      <div>
+      <div className="componentBody">
         <Title header="Examples" />
-        <div id="experience">
+        <div id="examples">
           {this.props.projects.map(project => {
             return (
               <div key={project.title}>

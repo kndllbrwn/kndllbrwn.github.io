@@ -94,7 +94,7 @@ i {
   margin: auto;
 }
 
-#experience {
+#examples {
   overflow-y: scroll;
   max-height: 839px;
 }
@@ -178,11 +178,11 @@ i {
     margin-right: .5em;
   }
 
-  #education {
+  .componentBody  {
     margin-bottom: 7em;
   }
 
-  #interests {
+  /*#interests {
   margin-bottom: 7em;
-}
+}*/
 }

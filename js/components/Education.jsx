@@ -4,7 +4,7 @@ import Title from './Title';
 const Education = React.createClass({
   render() {
     return (
-      <div id="education">
+      <div className="componentBody">
         <dl>
           <Title header="Education" />
           <dt>

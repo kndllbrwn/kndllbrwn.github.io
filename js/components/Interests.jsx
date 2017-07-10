@@ -4,7 +4,7 @@ import Title from './Title';
 const Interests = React.createClass({
   render() {
     return (
-      <div id="interests">
+      <div className="componentBody">
         <ul>
           <Title header="Interests & Activities" />
           <li>Volunteerism and change management(President of Penn State Alumni AIG)</li>

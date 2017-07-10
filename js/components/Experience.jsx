@@ -5,7 +5,7 @@ import Position from './Position';
 const Experience = React.createClass({
   render() {
     return (
-      <div>
+      <div className="componentBody">
         <Title header="Experience" />
         {this.props.jobs.map(job => {
           return <Position key={job.company} {...job} />;
