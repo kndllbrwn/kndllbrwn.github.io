@@ -10,6 +10,7 @@ module.exports = {
     publicPath: '/',
   },
   devServer: {
+    inline: true,
     publicPath: '/public/',
     historyApiFallback: true
   },

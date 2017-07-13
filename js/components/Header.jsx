@@ -26,7 +26,7 @@ const Header = React.createClass({
               </a>
             </li>
             <li>
-              <a href="https://www.kb3itsolutions.com" target="_blank">
+              <a href="http://www.kb3itsolutions.com" target="_blank">
                 <i className="fa fa-laptop" />
                 <span className="header_brandingLg">Past Website</span>
               </a>
