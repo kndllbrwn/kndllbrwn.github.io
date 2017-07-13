@@ -4,7 +4,7 @@ import preload from '../public/jobs.json';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import FlipMove from 'react-flip-move';
 import FlipCard from 'react-flipcard';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 
 import '../public/style.css';
 
@@ -18,37 +18,67 @@ import Interests from './components/Interests';
 import Skills from './components/Skills';
 
 const App = React.createClass({
+  getInitialState() {
+    return {
+      isFlipped: false
+    };
+  },
+
+  showBack() {
+    this.setState({
+      isFlipped: true
+    });
+  },
+
+  showFront() {
+    this.setState({
+      isFlipped: false
+    });
+  },
+
+  handleOnFlip(flipped) {
+    if (flipped) {
+      this.refs.backButton.getDOMNode().focus();
+    }
+  },
+
+  handleKeyDown(e) {
+    if (this.state.isFlipped && e.keyCode === 27) {
+      this.showFront();
+    }
+  },
   render() {
     return (
       <Grid fluid>
         <BrowserRouter>
-          <div className="app">
+          <div>
+            <div className="app">
               <nav className="nav">
-                <Link to="/">
+                <NavLink exact to="/">
                   <i className="fa fa-history" />
-                  <br/>
-                  <span className="nav__span">Experience</span>
-                </Link>
-                <Link to="/examples">
+                  <br />
+                  <span className="nav__span">History</span>
+                </NavLink>
+                <NavLink to="/examples">
                   <i className="fa fa-code" />
-                  <br/>
+                  <br />
                   <span className="nav__span">Examples</span>
-                </Link>
-                <Link to="/education">
+                </NavLink>
+                <NavLink to="/education">
                   <i className="fa fa-graduation-cap" />
-                  <br/>
+                  <br />
                   <span className="nav__span">Education</span>
-                </Link>
-                <Link to="/skills">
+                </NavLink>
+                <NavLink to="/skills">
                   <i className="fa fa-certificate" />
-                  <br/>
+                  <br />
                   <span className="nav__span">Skills</span>
-                </Link>
-                <Link to="/interests">
+                </NavLink>
+                <NavLink to="/interests">
                   <i className="fa fa-puzzle-piece" />
-                  <br/>
+                  <br />
                   <span className="nav__span">Interests</span>
-                </Link>
+                </NavLink>
               </nav>
               <Row>
                 <Col xs={12}>
@@ -63,6 +93,46 @@ const App = React.createClass({
                 <Route path="/skills" component={props => <Skills skills={preload.skills} {...props} />} />
                 <Route path="/interests" component={Interests} />
               </Switch>
+            </div>
+            <div id="desktop">
+              <Row>
+          <Col xs={12}>
+            <Header />
+            <Bio />
+          </Col>
+        </Row>
+
+        <div className="flex-container">
+          <Row>
+            <Col xs={9}>
+              <FlipCard
+                disabled={true}
+                flipped={this.state.isFlipped}
+                onFlip={this.handleOnFlip}
+                onKeyDown={this.handleKeyDown}
+              >
+                <div className="flipCard_div">
+                  <button className="flipCard_button" type="button" onClick={this.showBack}>
+                    See<br />Examples
+                  </button>
+                  <Experience jobs={preload.jobs} />
+                </div>
+                <div className="flipCard_div">
+                  <button className="flipCard_button" type="button" ref="backButton" onClick={this.showFront}>
+                    See<br />Experience
+                  </button>
+                  <Examples projects={preload.projects} />
+                </div>
+              </FlipCard>
+            </Col>
+            <Col xs={3}>
+              <Skills skills={preload.skills} />
+              <Education />
+              <Interests />
+            </Col>
+          </Row>
+        </div>
+            </div>
           </div>
         </BrowserRouter>
       </Grid>

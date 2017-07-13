@@ -10,6 +10,10 @@ body {
       background-color: cornsilk;
     }
 
+.app {
+  display:none;
+}
+
 blockquote {
   margin-left: 0;
 }
@@ -125,11 +129,6 @@ i {
 }
 /* End Scrollbar changes */
 
-/*.flipCard_div img{
-  display: block;
-  margin: auto;
-}*/
-
 .ReactFlipCard{
   width: 650px;
 }
@@ -150,12 +149,28 @@ i {
       width: 40em;
     }
 
+  .app {
+    display:block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
   .header_brandingLg {
     display: none;
   }
 
+  .fa {
+    font-size: 2em;
+  }
+
   .container-fluid {
     font-size: 2em;
+  }
+
+  a.active i, a.active span{
+    color:#0082c8
   }
   .nav {
       background: black;
@@ -171,8 +186,8 @@ i {
   }
   .nav i {
     color: white;
-    font-size: 2.5em;
-    margin-left: .5em;
+    font-size: 2.4em;
+    margin-left: .4em;
     margin-right: .5em;
   }
 
@@ -182,7 +197,7 @@ i {
 
   .nav__span {
     font-size: 1.5rem;
-    margin-left: 2.3rem;
+    margin-left: 1.65rem;
     color: white;
     
   }
@@ -191,7 +206,4 @@ i {
     margin-bottom: 7em;
   }
 
-  /*#interests {
-  margin-bottom: 7em;
-}*/
 }
