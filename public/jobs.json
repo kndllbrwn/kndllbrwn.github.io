@@ -57,7 +57,7 @@
       "title": "Link Shortener",
       "description": "A web app that takes a link provided by the user and creates truncated link they can use to paste to guide people to the original link.",
       "software": ["NodeJS", "React", "Meteor"],
-      "link": "https://score-keep-brown.herokuapp.com/",
+      "link": "https://short-link-brown.herokuapp.com/",
       "image": "ShortLink"
     }, {
       "title": "PSD Conversionr",
