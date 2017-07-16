@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import preload from '../public/jobs.json';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import FlipMove from 'react-flip-move';
 import FlipCard from 'react-flipcard';
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 
@@ -96,42 +95,42 @@ const App = React.createClass({
             </div>
             <div id="desktop">
               <Row>
-          <Col xs={12}>
-            <Header />
-            <Bio />
-          </Col>
-        </Row>
+                <Col xs={12}>
+                  <Header />
+                  <Bio />
+                </Col>
+              </Row>
 
-        <div className="flex-container">
-          <Row>
-            <Col xs={9}>
-              <FlipCard
-                disabled={true}
-                flipped={this.state.isFlipped}
-                onFlip={this.handleOnFlip}
-                onKeyDown={this.handleKeyDown}
-              >
-                <div className="flipCard_div">
-                  <button className="flipCard_button" type="button" onClick={this.showBack}>
-                    See<br />Examples
-                  </button>
-                  <Experience jobs={preload.jobs} />
-                </div>
-                <div className="flipCard_div">
-                  <button className="flipCard_button" type="button" ref="backButton" onClick={this.showFront}>
-                    See<br />Experience
-                  </button>
-                  <Examples projects={preload.projects} />
-                </div>
-              </FlipCard>
-            </Col>
-            <Col xs={3}>
-              <Skills skills={preload.skills} />
-              <Education />
-              <Interests />
-            </Col>
-          </Row>
-        </div>
+              <div className="flex-container">
+                <Row>
+                  <Col xs={9}>
+                    <FlipCard
+                      disabled={true}
+                      flipped={this.state.isFlipped}
+                      onFlip={this.handleOnFlip}
+                      onKeyDown={this.handleKeyDown}
+                    >
+                      <div className="flipCard_div">
+                        <button className="flipCard_button" type="button" onClick={this.showBack}>
+                          See Examples of My Work
+                        </button>
+                        <Experience jobs={preload.jobs} />
+                      </div>
+                      <div className="flipCard_div">
+                        <button className="flipCard_button" type="button" ref="backButton" onClick={this.showFront}>
+                          See<br />Experience
+                        </button>
+                        <Examples projects={preload.projects} />
+                      </div>
+                    </FlipCard>
+                  </Col>
+                  <Col xs={3}>
+                    <Skills skills={preload.skills} />
+                    <Education />
+                    <Interests />
+                  </Col>
+                </Row>
+              </div>
             </div>
           </div>
         </BrowserRouter>
