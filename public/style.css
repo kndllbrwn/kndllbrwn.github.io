@@ -1,14 +1,18 @@
-/*Needed for flex-box and react carousel to get along*/
-* {
-  min-height: 0;
-  min-width: 0;
+body {
+      font-size: .7em;
+      margin: auto;
+      background-color: cornsilk;
 }
 
+@media (min-width: 960px) {
 body {
       width: 60em;
+      font-size: 1em;
       margin: auto;
       background-color: cornsilk;
     }
+}
+
 
 .app {
   display:none;
@@ -51,15 +55,6 @@ aside ul li {
   display: flex;
   margin-right: auto;
   flex-wrap: wrap;
-}
-
-.flex-item1 {
-  width: 55%;
-}
-
-.flex-item2 {
-  margin-left:5em;
-  width: 30%;
 }
 
 header {
@@ -105,7 +100,7 @@ i {
 
 /* Set up page scrollbars */
 ::-webkit-scrollbar {
-    width: 1.2px;
+    width: 5px;
 }
  
 /* Track */
@@ -139,14 +134,21 @@ i {
   border-color: #2e6da4;
   cursor: pointer;
   position: absolute;
-  left: 210px;
+  left: 563px;
   top: 33px;
+  max-width: 80px;
 }
 
 @media (max-width: 415px) {
 
   body {
       width: 40em;
+    }
+
+    /*Fix social media block*/
+    aside ul li {
+      display: inline;
+      margin-right: -.1rem;
     }
 
   .app {
@@ -180,26 +182,31 @@ i {
       height: 4em;
       justify-content: space-between;
       left: 0;
-      padding-top: 1em; 
+      /*padding-top: 1em; */
       position: fixed;
       width: 100%;    
   }
   .nav i {
     color: white;
-    font-size: 2.4em;
+    font-size: 2em;
     margin-left: .4em;
     margin-right: .5em;
   }
 
   .nav a {
     text-decoration: none;
+    width: calc(20%);
+    text-align: center;
+    border-left: white 1px solid;
+    border-right: white 1px solid;
+    padding-top: 0.3em;
   }
 
   .nav__span {
-    font-size: 1.5rem;
-    margin-left: 1.65rem;
+    font-size: 1rem;
+    /*margin-left: 1.65rem;*/
     color: white;
-    
+    text-align: center;
   }
 
   .componentBody  {

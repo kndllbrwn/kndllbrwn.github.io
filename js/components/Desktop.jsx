@@ -33,7 +33,9 @@ const App = React.createClass({
 
   handleOnFlip(flipped) {
     if (flipped) {
-      this.refs.backButton.getDOMNode().focus();
+      {
+        /*this.refs.backButton.getDOMNode().focus();*/
+      }
     }
   },
 
@@ -63,13 +65,13 @@ const App = React.createClass({
               >
                 <div className="flipCard_div">
                   <button className="flipCard_button" type="button" onClick={this.showBack}>
-                    See<br />Examples
+                    See Projects
                   </button>
                   <Experience jobs={preload.jobs} />
                 </div>
                 <div className="flipCard_div">
                   <button className="flipCard_button" type="button" ref="backButton" onClick={this.showFront}>
-                    See<br />Experience
+                    See Experience
                   </button>
                   <Examples projects={preload.projects} />
                 </div>
@@ -81,15 +83,6 @@ const App = React.createClass({
               <Interests />
             </Col>
           </Row>
-          {/* <Row>
-            <Col xs={6}>
-              <Education />
-            </Col>
-            <Col xs={6}>
-              <Interests />
-
-            </Col>
-          </Row> */}
         </div>
       </div>
     );
