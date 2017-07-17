@@ -4,16 +4,6 @@ body {
       background-color: cornsilk;
 }
 
-@media (min-width: 960px) {
-body {
-      width: 60em;
-      font-size: 1em;
-      margin: auto;
-      background-color: cornsilk;
-    }
-}
-
-
 .app {
   display:none;
 }
@@ -125,8 +115,12 @@ i {
 /* End Scrollbar changes */
 
 .ReactFlipCard{
-  width: 650px;
+  width: 520px;
 }
+
+/*.flipCard_div {
+  max-width: 525px;
+}*/
 
 .flipCard_button {
   color: #fff;
@@ -134,9 +128,33 @@ i {
   border-color: #2e6da4;
   cursor: pointer;
   position: absolute;
-  left: 563px;
-  top: 33px;
+  left: 440px;
+  top: 10px;
   max-width: 80px;
+}
+
+@media (min-width: 960px) {
+body {
+      width: 60em;
+      font-size: 1em;
+      margin: auto;
+      background-color: cornsilk;
+    }
+
+.ReactFlipCard{
+  width: 650px;
+}
+
+.flipCard_button {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    cursor: pointer;
+    position: absolute;
+    left: 563px;
+    top: 33px;
+    max-width: 80px;
+  }
 }
 
 @media (max-width: 415px) {
@@ -145,7 +163,7 @@ i {
       width: 40em;
     }
 
-    /*Fix social media block*/
+    /*Fix social media block on mobile*/
     aside ul li {
       display: inline;
       margin-right: -.1rem;
@@ -182,7 +200,6 @@ i {
       height: 4em;
       justify-content: space-between;
       left: 0;
-      /*padding-top: 1em; */
       position: fixed;
       width: 100%;    
   }
