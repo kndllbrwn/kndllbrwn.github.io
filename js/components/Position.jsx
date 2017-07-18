@@ -16,13 +16,20 @@ const Position = React.createClass({
         <h3>
           {title}
         </h3>
-        <button className="button" onClick={() => this.setState({isOpen: true})}>Description</button>
+        <button className="position__button" onClick={() => this.setState({isOpen: true})}>Description</button>
         <Modal
           isOpen={this.state.isOpen}
           contentLabel="Modal"
+          className="modal"
+          
         >
-          <h1>{title}<button className="button" onClick={() => this.setState({isOpen: false})}>x</button></h1>
-          <p>{about}</p>
+          <h1 className="modal__title">{title}</h1>
+          <div className="modal__body">
+            <p>{about}</p>
+            <p><a href={link} target="_blank">{company}</a></p>
+            <button className="modal__button" onClick={() => this.setState({isOpen: false})}>Close</button>
+          </div>
+          
         </Modal>
         <p>
           <i>

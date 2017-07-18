@@ -1,9 +1,10 @@
+/*Setting default size for middle viewport*/
 body {
-      font-size: .7em;
-      margin: auto;
-      background-color: cornsilk;
+  font-size: .7em;
+  margin: auto;
+  background-color: cornsilk;
 }
-
+/*Hide mobile view from larger view ports*/
 .app {
   display:none;
 }
@@ -69,6 +70,40 @@ i {
   margin-bottom: 1em;
 }
 
+.position__button {
+  background: blue;
+  color: cornsilk;
+  padding: 0.15em;
+}
+
+.modal {
+    background-color: cornsilk;
+    border-radius: 20px;
+    /*padding: 2.4rem;*/
+    text-align: center;
+    width: 24rem;
+    position: absolute;
+    top: 10em;
+    left: 25em;
+}
+
+.modal__title {
+  background: blue;
+  color: cornsilk;
+  margin: 0;
+}
+
+.modal__body {
+  text-align: center;
+  padding: 2em;
+}
+
+.modal__button {
+    font-size: 1.5em;
+    background: blue;
+    color: cornsilk;
+}
+
 .skill {
   margin-right: .5em;
 }
@@ -123,8 +158,8 @@ i {
 }*/
 
 .flipCard_button {
-  color: #fff;
-  background-color: #337ab7;
+  color: cornsilk;
+  background-color: blue;
   border-color: #2e6da4;
   cursor: pointer;
   position: absolute;
@@ -176,6 +211,36 @@ body {
   #desktop {
     display: none;
   }
+
+  #examples {
+    overflow-y: inherit;
+    max-height: 1200px;
+  }
+
+  .projectImage {
+    max-width: 370px;
+    display: block;
+    margin: auto;
+  }
+
+  .modal {
+    background-color: cornsilk;
+    /* padding: 2.4rem; */
+    text-align: center;
+    width: 25rem;
+    position: absolute;
+    top: 10em;
+    left: 2em;
+    height: 15rem;
+  }
+
+  .modal__button {
+    font-size: 1.5em;
+    background: blue;
+    color: cornsilk;
+    position: relative;
+    bottom: -2em;
+}
 
   .header_brandingLg {
     display: none;
