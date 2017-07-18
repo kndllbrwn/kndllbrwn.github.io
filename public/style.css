@@ -8,35 +8,39 @@ body {
 .app {
   display:none;
 }
-
-blockquote {
+/*Overriding blockqoute indentation*/
+.bio {
   margin-left: 0;
 }
-
-h1 {
+/*Sepearating heading and social media*/
+.header__heading {
   margin-right: auto;
 }
-
-h2 {
+/*Styling headers of resume sections*/
+.componentBody__heading {
   color:blue;
   font-size: 2em;
   text-transform: uppercase;
 }
-
-ul > *, ul {
+/*Making ui for positions compact*/
+.position * {
   margin: 0;
   padding: 0;
 }
-
-ul li {
+/*Aligning list items with siblings*/
+.position li {
   list-style-position: inside;
 }
-
-aside {
+/*Aligning social buttons with heading*/
+.socialButtons {
   margin-top:1.5em;
 }
-
-aside ul li {
+/*Making ui for social buttons compact*/
+.socialButtons__list {
+  margin: 0;
+  padding: 0;
+}
+.socialButtons__list li {
   display: inline;
   margin-right: .5rem;
 }
@@ -48,7 +52,7 @@ aside ul li {
   flex-wrap: wrap;
 }
 
-header {
+.header {
   display: flex;
   align-content: space-between;
 }
@@ -57,7 +61,7 @@ header {
   margin-right: .2em;
 }
 
-p {
+.position__p {
   display: flex;
   justify-content: space-between;
 }
@@ -68,11 +72,14 @@ i {
 
 .position {
   margin-bottom: 1em;
+  padding: 0;
 }
 
 .position__button {
   background: blue;
+  border-color: black;
   color: cornsilk;
+  cursor: pointer;
   padding: 0.15em;
 }
 
@@ -199,7 +206,7 @@ body {
     }
 
     /*Fix social media block on mobile*/
-    aside ul li {
+    .socialButtons__list li {
       display: inline;
       margin-right: -.1rem;
     }

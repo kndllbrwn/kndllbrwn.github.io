@@ -3,10 +3,10 @@ import React from 'react';
 const Header = React.createClass({
   render() {
     return (
-      <header>
-        <h1>Kendall L. Brown, ICP-PRG</h1>
-        <aside>
-          <ul>
+      <header className="header">
+        <h1 className="header__heading">Kendall L. Brown, ICP-PRG</h1>
+        <aside className="socialButtons">
+          <ul className="socialButtons__list">
             <li>
               <a href="mailto:kndllbrwn1914@gmail.com">
                 <i className="fa fa-envelope" />
