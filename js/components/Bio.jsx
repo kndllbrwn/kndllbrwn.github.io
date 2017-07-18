@@ -5,7 +5,7 @@ const Bio = React.createClass({
     return (
       <div>
         <hr />
-        <blockquote>
+        <blockquote className="bio">
           I am a full-stack developer with a long history of providing IT solutions to improve the relationships between
           clients and end-users. This takes the form of being an advocate for User Experience and best practices in
           modern development.

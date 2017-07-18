@@ -31,7 +31,7 @@ const Position = React.createClass({
           </div>
           
         </Modal>
-        <p>
+        <p className="position__p">
           <i>
             <a href={link} target="_blank">
               {company}
