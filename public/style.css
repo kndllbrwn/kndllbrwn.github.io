@@ -66,6 +66,11 @@ body {
   justify-content: space-between;
 }
 
+.position__h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
 i {
   color: black;
 }
@@ -81,6 +86,7 @@ i {
   color: cornsilk;
   cursor: pointer;
   padding: 0.15em;
+  max-height: 30px;
 }
 
 .modal {
