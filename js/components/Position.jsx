@@ -13,10 +13,11 @@ const Position = React.createClass({
     const { title, about, company, link, year, description } = this.props;
     return (
       <ul className="position">
-        <h3>
-          {title}
-        </h3>
+      <p>
+        <h3 className="position__h3">{title}
         <button className="position__button" onClick={() => this.setState({isOpen: true})}>Description</button>
+        </h3>
+        </p>
         <Modal
           isOpen={this.state.isOpen}
           contentLabel="Modal"
@@ -33,9 +34,7 @@ const Position = React.createClass({
         </Modal>
         <p className="position__p">
           <i>
-            <a href={link} target="_blank">
-              {company}
-            </a>
+            <h4>{company}</h4>
           </i>{' '}
           <span>{year}</span>
         </p>

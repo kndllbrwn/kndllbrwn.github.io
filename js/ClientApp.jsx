@@ -54,9 +54,9 @@ const App = React.createClass({
             <div className="app">
               <nav className="nav">
                 <NavLink exact to="/">
-                  <i className="fa fa-history" />
+                  <i className="fa fa-briefcase" />
                   <br />
-                  <span className="nav__span">History</span>
+                  <span className="nav__span">Experience</span>
                 </NavLink>
                 <NavLink to="/examples">
                   <i className="fa fa-code" />
@@ -112,7 +112,7 @@ const App = React.createClass({
                     >
                       <div className="flipCard_div">
                         <button className="flipCard_button" type="button" onClick={this.showBack}>
-                          See Examples of My Work
+                          See Projects
                         </button>
                         <Experience jobs={preload.jobs} />
                       </div>
