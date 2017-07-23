@@ -97,7 +97,7 @@ i {
     width: 24rem;
     position: absolute;
     top: 10em;
-    left: 25em;
+    left: 30em;
 }
 
 .modal__title {
@@ -181,6 +181,9 @@ i {
   max-width: 80px;
 }
 
+.interestsList {
+  padding: 0;
+}
 @media (min-width: 960px) {
 body {
       width: 60em;
@@ -203,6 +206,18 @@ body {
     top: 33px;
     max-width: 80px;
   }
+}
+
+@media (max-width: 736px) {
+
+.ReactFlipCard{
+  width: 506px;
+}
+
+.flipCard_button {
+  left: 424px;
+}
+
 }
 
 @media (max-width: 415px) {
