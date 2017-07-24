@@ -1,3 +1,9 @@
+/*Needed for flex-box and react carousel to get along*/
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
 /*Setting default size for middle viewport*/
 body {
   font-size: .7em;
@@ -194,6 +200,7 @@ body {
 
 .ReactFlipCard{
   width: 650px;
+  height: 740px;
 }
 
 .flipCard_button {
@@ -206,16 +213,41 @@ body {
     top: 33px;
     max-width: 80px;
   }
+
+  .feedback__p {
+    max-width: 600px;
+    padding-left: 20px;
+  }
+
+  .slick-next:before, .slick-prev:before {
+    font-size: 45px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+    left: -22px;
+    bottom: 60px;
+    position: relative
+  }
+  .slick-next {
+    right: 7px;
+    /*background: black;*/
+  }
 }
 
-@media (max-width: 736px) {
+@media (max-width: 769px) {
 
 .ReactFlipCard{
   width: 506px;
+  height: 535px;
 }
 
 .flipCard_button {
   left: 424px;
+}
+
+#examples {
+    overflow-y: scroll;
+    max-height: 477px;
 }
 
 }
@@ -278,6 +310,10 @@ body {
     font-size: 2em;
   }
 
+  .fa-quote-left, .fa-quote-right {
+    font-size: 1em;
+  }
+
   .container-fluid {
     font-size: 2em;
   }
@@ -294,7 +330,8 @@ body {
       justify-content: space-between;
       left: 0;
       position: fixed;
-      width: 100%;    
+      width: 100%;
+      z-index: 2;    
   }
   .nav i {
     color: white;
@@ -323,4 +360,7 @@ body {
     margin-bottom: 7em;
   }
 
+  .slick-next:before, .slick-prev:before {
+    color: black;
+  }
 }

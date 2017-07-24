@@ -91,5 +91,22 @@
     }, {
       "skill": "Graphic Design",
       "list": ["Photoshop", "Illustrator", "Adobe XD"]
+    }],
+    "feedback": [{
+      "role": "UX Designer",
+      "organization": "Booz Allen Hamiltion",
+      "comment": "Kendall has been able to quickly contribute and raise issues pertinent to other work streams due to his technical knowledge and has skillfully coordinated though his project leads to present solutions to the client. Kendall is able to frame his solutions within the technical understanding of the client, a valuable skill when interacting with clients and non-technical associates. Kendall is passionate about providing value and tangible solutions to our client’s problems."
+    }, {
+      "role": "Project Manager",
+      "organization": "Booz Allen Hamiltion",
+      "comment": "Kendall has leveraged his front-end development subject matter expertise, particularly in Bootstrap CSS and HTML, to take the lead in investigating and recommending solutions to fix these issues"
+    }, {
+      "role": "Project Manager",
+      "organization": "Booz Allen Hamiltion",
+      "comment": "Kendall has been relied on to raise and report issues that impact the quality of the User Interface and ensuring it aligns the style guide.  He has addressed issues raised by the client in a knowledgeable manner. As the content team, has progressed in their cleanup of the migrated content, encountering unexpected user interface issues and behaviors, Kendall has been the point person on investigate these issues."
+    }, {
+      "role": "Project Manager",
+      "organization": "Booz Allen Hamiltion",
+      "comment": "Applying his thorough understanding of browser debugging tools he could identify quick fixes or escalating issues that impact multiple pages.  Through these activities and his ability to communicate issues and solutions effectively, Kendall has built a reputation as subject matter expert who can facilitate and lead discussions on front end development problems and solutions. He has been given increasing responsibility in this domain from assisting the UX work stream with code insight when developing style guides to leading discussions with the client around ways to fix site wide problems that can affect deliverable deadlines."
     }]
 }

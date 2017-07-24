@@ -13,6 +13,7 @@ import Desktop from './components/Desktop';
 import Education from './components/Education';
 import Examples from './components/Examples';
 import Experience from './components/Experience';
+import Feedback from './components/Feedback';
 import Interests from './components/Interests';
 import Skills from './components/Skills';
 
@@ -73,10 +74,10 @@ const App = React.createClass({
                   <br />
                   <span className="nav__span">Skills</span>
                 </NavLink>
-                <NavLink to="/interests">
-                  <i className="fa fa-puzzle-piece" />
+                <NavLink to="/feedback">
+                  <i className="fa fa-commenting" />
                   <br />
-                  <span className="nav__span">Interests</span>
+                  <span className="nav__span">Feedback</span>
                 </NavLink>
               </nav>
               <Row>
@@ -90,7 +91,7 @@ const App = React.createClass({
                 <Route path="/examples" component={props => <Examples projects={preload.projects} {...props} />} />
                 <Route path="/education" component={Education} />
                 <Route path="/skills" component={props => <Skills skills={preload.skills} {...props} />} />
-                <Route path="/interests" component={Interests} />
+                <Route path="/feedback" component={props => <Feedback feedback={preload.feedback} {...props} />} />
               </Switch>
             </div>
             <div id="desktop">
@@ -123,6 +124,7 @@ const App = React.createClass({
                         <Examples projects={preload.projects} />
                       </div>
                     </FlipCard>
+                    <Feedback feedback={preload.feedback}/>
                   </Col>
                   <Col xs={3}>
                     <Skills skills={preload.skills} />
