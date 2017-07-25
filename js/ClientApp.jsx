@@ -104,7 +104,7 @@ const App = React.createClass({
 
               <div className="flex-container">
                 <Row>
-                  <Col xs={9}>
+                  <Col xs={12} sm={9}>
                     <FlipCard
                       disabled={true}
                       flipped={this.state.isFlipped}
@@ -126,7 +126,7 @@ const App = React.createClass({
                     </FlipCard>
                     <Feedback feedback={preload.feedback}/>
                   </Col>
-                  <Col xs={3}>
+                  <Col xs={12} sm={3}>
                     <Skills skills={preload.skills} />
                     <Education />
                     <Interests />
