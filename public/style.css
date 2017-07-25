@@ -214,6 +214,10 @@ body {
     max-width: 80px;
   }
 
+  #examples {
+    max-height: 670px;
+  }
+
   .feedback__p {
     max-width: 600px;
     padding-left: 20px;
