@@ -272,6 +272,10 @@ body {
     display:block;
   }
 
+  .position__span {
+    max-width: 300px;
+  }
+
   #desktop {
     display: none;
   }
