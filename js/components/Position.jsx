@@ -16,7 +16,9 @@ const Position = React.createClass({
       <ul className="position">
         <p>
           <h3 className="position__h3">
-            <span className="position__span">{title}</span>
+            <span className="position__span">
+              {title}
+            </span>
             <button className="position__button" onClick={() => this.setState({ isOpen: true })}>
               Description
             </button>

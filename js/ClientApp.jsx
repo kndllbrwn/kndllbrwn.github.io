@@ -124,7 +124,7 @@ const App = React.createClass({
                         <Examples projects={preload.projects} />
                       </div>
                     </FlipCard>
-                    <Feedback feedback={preload.feedback}/>
+                    <Feedback feedback={preload.feedback} />
                   </Col>
                   <Col xs={12} sm={3}>
                     <Skills skills={preload.skills} />

@@ -46,23 +46,24 @@ body {
   margin: 0;
   padding: 0;
 }
+/*Styling social media buttons horizontally in header*/
 .socialButtons__list li {
   display: inline;
   margin-right: .5rem;
 }
-
+/*Parent container for flexbox items*/
 .flex-container {
   display: -webkit-flex;
   display: flex;
   margin-right: auto;
   flex-wrap: wrap;
 }
-
+/*Set up header to align content on opposite sides of page*/
 .header {
   display: flex;
   align-content: space-between;
 }
-
+/*Improved spacing on icons in header*/
 .fa {
   margin-right: .2em;
 }
@@ -98,7 +99,6 @@ i {
 .modal {
     background-color: cornsilk;
     border-radius: 20px;
-    /*padding: 2.4rem;*/
     text-align: center;
     width: 24rem;
     position: absolute;
