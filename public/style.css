@@ -67,26 +67,26 @@ body {
 .fa {
   margin-right: .2em;
 }
-
+/*Spacing for company and date on position*/
 .position__p {
   display: flex;
   justify-content: space-between;
 }
-
+/*Spacing for position title and button*/
 .position__h3 {
   display: flex;
   justify-content: space-between;
 }
-
+/*Made icons in header black*/
 i {
   color: black;
 }
-
+/*Set up spacing for position*/
 .position {
   margin-bottom: 1em;
   padding: 0;
 }
-
+/*Set up styling for buttons in each position*/
 .position__button {
   background: blue;
   border-color: black;
@@ -95,7 +95,7 @@ i {
   padding: 0.15em;
   max-height: 30px;
 }
-
+/*Styling for position modals*/
 .modal {
     background-color: cornsilk;
     border-radius: 20px;
@@ -105,38 +105,38 @@ i {
     top: 10em;
     left: 30em;
 }
-
+/*Modal heading styling*/
 .modal__title {
   background: blue;
   color: cornsilk;
   margin: 0;
 }
-
+/*Modal body styling*/
 .modal__body {
   text-align: center;
   padding: 2em;
 }
-
+/*Styling for modal button*/
 .modal__button {
     font-size: 1.5em;
     background: blue;
     color: cornsilk;
 }
-
+/*Spacing between items in skill lists*/
 .skill {
   margin-right: .5em;
 }
-
+/*Styling for title of code projects*/
 .project__title {
   text-align: center;
 }
-
+/*Styling for image of code projects*/
 .projectImage {
   max-width: 450px;
   display: block;
   margin: auto;
 }
-
+/*Setting height of projects and scrolling*/
 #examples {
   overflow-y: scroll;
   max-height: 839px;
@@ -167,15 +167,11 @@ i {
 	background: rgba(255,0,0,0.4); 
 }
 /* End Scrollbar changes */
-
+/*Controlling width of of flipcard component*/
 .ReactFlipCard{
   width: 520px;
 }
-
-/*.flipCard_div {
-  max-width: 525px;
-}*/
-
+/*Styling for flipcard button*/
 .flipCard_button {
   color: cornsilk;
   background-color: blue;
@@ -186,11 +182,12 @@ i {
   top: 10px;
   max-width: 80px;
 }
-
+/*Styling of interests component*/
 .interestsList {
   padding: 0;
 }
 @media (min-width: 960px) {
+  
 body {
       width: 60em;
       font-size: 1em;
