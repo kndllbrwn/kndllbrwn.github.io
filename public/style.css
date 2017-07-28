@@ -187,19 +187,19 @@ i {
   padding: 0;
 }
 @media (min-width: 960px) {
-  
+  /*Align content to center*/
 body {
       width: 60em;
       font-size: 1em;
       margin: auto;
       background-color: cornsilk;
     }
-
+/*Sizing style for flipcard component on large monitors*/
 .ReactFlipCard{
   width: 650px;
   height: 740px;
 }
-
+/*Styling for flipcard buttons for large displays*/
 .flipCard_button {
     color: #fff;
     background-color: #337ab7;
@@ -210,16 +210,16 @@ body {
     top: 33px;
     max-width: 80px;
   }
-
+/*Controlling overflow of code examples*/
   #examples {
     max-height: 670px;
   }
-
+/*Controlling size of feedback paragraph on large displays*/
   .feedback__p {
     max-width: 600px;
     padding-left: 20px;
   }
-
+/*Styling arrows for feedback section*/
   .slick-next:before, .slick-prev:before {
     font-size: 45px;
     line-height: 1;
@@ -229,6 +229,7 @@ body {
     bottom: 60px;
     position: relative
   }
+  /*Styling right arrow*/
   .slick-next {
     right: 7px;
     /*background: black;*/
@@ -236,16 +237,16 @@ body {
 }
 
 @media (max-width: 769px) {
-
+/*Sizing of flipcard component on medium screens*/
 .ReactFlipCard{
   width: 506px;
   height: 535px;
 }
-
+/*Styling of flipcard buttons on medium screen*/
 .flipCard_button {
   left: 424px;
 }
-
+/*Control of project overflow on medium screens */
 #examples {
     overflow-y: scroll;
     max-height: 477px;
@@ -254,7 +255,7 @@ body {
 }
 
 @media (max-width: 415px) {
-
+/*Moving content to center of screen*/
   body {
       width: 40em;
     }
@@ -264,30 +265,30 @@ body {
       display: inline;
       margin-right: -.1rem;
     }
-
+/*Make mobile code visible*/
   .app {
     display:block;
   }
-
-  .position__span {
-    max-width: 300px;
-  }
-
+/*Make desktop view dissapear*/
   #desktop {
     display: none;
   }
-
+  /*Controlling size of positon titles*/
+  .position__span {
+    max-width: 300px;
+  }
+  /*Removing scroll from code examples on mobile*/
   #examples {
     overflow-y: inherit;
     max-height: 1200px;
   }
-
+/*Resizing project images on mobile*/
   .projectImage {
     max-width: 370px;
     display: block;
     margin: auto;
   }
-
+/*Setting styling for mobile modals*/
   .modal {
     background-color: cornsilk;
     /* padding: 2.4rem; */
@@ -298,7 +299,7 @@ body {
     left: 2em;
     height: 15rem;
   }
-
+/*Styling modal buttons on mobile*/
   .modal__button {
     font-size: 1.5em;
     background: blue;
@@ -306,26 +307,27 @@ body {
     position: relative;
     bottom: -2em;
 }
-
+/*Hiding contact text in header for better mobile experience*/
   .header_brandingLg {
     display: none;
   }
-
+/*Setting font-awesome size for mobile*/
   .fa {
     font-size: 2em;
   }
-
+/*Better sizing for feedback arrows on mobile*/
   .fa-quote-left, .fa-quote-right {
     font-size: 1em;
   }
-
+/*Increasing font-size for better mobile UI*/
   .container-fluid {
     font-size: 2em;
   }
-
+/*Setting color for nav active state*/
   a.active i, a.active span{
     color:#0082c8
   }
+  /*Styling mobile nav */
   .nav {
       background: black;
       bottom: 0;
@@ -338,6 +340,7 @@ body {
       width: 100%;
       z-index: 2;    
   }
+  /*Begin styling of mobile nav*/
   .nav i {
     color: white;
     font-size: 2em;
@@ -356,15 +359,14 @@ body {
 
   .nav__span {
     font-size: 1rem;
-    /*margin-left: 1.65rem;*/
     color: white;
     text-align: center;
   }
-
+/*End styling of mobile nav*/
   .componentBody  {
     margin-bottom: 7em;
   }
-
+/*Styling feedback arrows on mobile*/
   .slick-next:before, .slick-prev:before {
     color: black;
   }
