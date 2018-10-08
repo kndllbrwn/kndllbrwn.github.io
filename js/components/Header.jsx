@@ -4,7 +4,7 @@ const Header = React.createClass({
   render() {
     return (
       <header className="header">
-        <h1 className="header__heading">Kendall L. Brown, ICP-PRG</h1>
+        <h1 className="header__heading">Kendall L. Brown, AWS SA</h1>
         <aside className="socialButtons">
           <ul className="socialButtons__list">
             <li>
@@ -26,7 +26,7 @@ const Header = React.createClass({
               </a>
             </li>
             <li>
-              <a href="http://www.kb3itsolutions.com" target="_blank">
+              <a href="http://s3.amazonaws.com/kb3itconsulting.com/index.html" target="_blank">
                 <i className="fa fa-laptop" />
                 <span className="header_brandingLg">Past Website</span>
               </a>
