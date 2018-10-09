@@ -113,13 +113,13 @@ const App = React.createClass({
                     >
                       <div className="flipCard_div">
                         <button className="flipCard_button" type="button" onClick={this.showBack}>
-                          See Projects
+                          <i className="fa fa-code fa_flipButton"></i> Projects
                         </button>
                         <Experience jobs={preload.jobs} />
                       </div>
                       <div className="flipCard_div">
                         <button className="flipCard_button" type="button" ref="backButton" onClick={this.showFront}>
-                          See<br />Experience
+                          <i className="fa fa-briefcase fa_flipButtons"></i><br />Experience
                         </button>
                         <Examples projects={preload.projects} />
                       </div>
