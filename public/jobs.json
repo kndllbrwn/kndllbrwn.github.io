@@ -51,7 +51,7 @@
       "title": "3D Gallery",
       "description": "A 3D photo gallery that allows users to cycle through galleries in a 3D carousel.",
       "software": ["jQuery", "CSS"],
-      "link": "http://kb3itsolutions.com/LL/chnnl1914.html",
+      "link": "http://s3.amazonaws.com/kb3itconsulting.com/LL/chnnl1914.html",
       "image": "3DGallery"
     },{
       "title": "Link Shortener",
@@ -63,13 +63,13 @@
       "title": "PSD Conversion",
       "description": "A web page created to create a functional page from a PSD.",
       "software": ["HTML", "CSS", "jQuery"],
-      "link": "http://kb3itsolutions.com/portfolio/aspph.html",
+      "link": "http://s3.amazonaws.com/kb3itconsulting.com/portfolio/aspph.html",
       "image": "PSDConversion"
     }, {
       "title": "Online Calculator",
       "description": "A jquery calculator",
       "software": ["HTML", "CSS", "jQuery"],
-      "link": "http://kb3itsolutions.com/jQueryCalc.html",
+      "link": "http://s3.amazonaws.com/kb3itconsulting.com/jQueryCalc.html",
       "image": "OnlineCalc"
     }
     ],
