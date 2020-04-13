@@ -1,38 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import preload from '../public/jobs.json';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import FlipCard from 'react-flipcard';
-import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import preload from "../public/jobs.json";
+import { Grid, Row, Col } from "react-flexbox-grid";
+import FlipCard from "react-flipcard";
+import { BrowserRouter, NavLink, Route, Switch } from "react-router-dom";
 
-import '../public/style.css';
+import "../public/style.css";
 
-import Header from './components/Header';
-import Bio from './components/Bio';
-import Desktop from './components/Desktop';
-import Education from './components/Education';
-import Examples from './components/Examples';
-import Experience from './components/Experience';
-import Feedback from './components/Feedback';
-import Interests from './components/Interests';
-import Skills from './components/Skills';
+import Header from "./components/Header";
+import Bio from "./components/Bio";
+import Desktop from "./components/Desktop";
+import Education from "./components/Education";
+import Examples from "./components/Examples";
+import Experience from "./components/Experience";
+import Feedback from "./components/Feedback";
+import Interests from "./components/Interests";
+import Skills from "./components/Skills";
 
 const App = React.createClass({
   getInitialState() {
     return {
-      isFlipped: false
+      isFlipped: false,
     };
   },
 
   showBack() {
     this.setState({
-      isFlipped: true
+      isFlipped: true,
     });
   },
 
   showFront() {
     this.setState({
-      isFlipped: false
+      isFlipped: false,
     });
   },
 
@@ -62,7 +62,7 @@ const App = React.createClass({
                 <NavLink to="/examples">
                   <i className="fa fa-code" />
                   <br />
-                  <span className="nav__span">Examples</span>
+                  <span className="nav__span">Projects</span>
                 </NavLink>
                 <NavLink to="/education">
                   <i className="fa fa-graduation-cap" />
@@ -87,11 +87,32 @@ const App = React.createClass({
                 </Col>
               </Row>
               <Switch>
-                <Route exact path="/" component={props => <Experience jobs={preload.jobs} {...props} />} />
-                <Route path="/examples" component={props => <Examples projects={preload.projects} {...props} />} />
+                <Route
+                  exact
+                  path="/"
+                  component={(props) => (
+                    <Experience jobs={preload.jobs} {...props} />
+                  )}
+                />
+                <Route
+                  path="/examples"
+                  component={(props) => (
+                    <Examples projects={preload.projects} {...props} />
+                  )}
+                />
                 <Route path="/education" component={Education} />
-                <Route path="/skills" component={props => <Skills skills={preload.skills} {...props} />} />
-                <Route path="/feedback" component={props => <Feedback feedback={preload.feedback} {...props} />} />
+                <Route
+                  path="/skills"
+                  component={(props) => (
+                    <Skills skills={preload.skills} {...props} />
+                  )}
+                />
+                <Route
+                  path="/feedback"
+                  component={(props) => (
+                    <Feedback feedback={preload.feedback} {...props} />
+                  )}
+                />
               </Switch>
             </div>
             <div id="desktop">
@@ -112,14 +133,25 @@ const App = React.createClass({
                       onKeyDown={this.handleKeyDown}
                     >
                       <div className="flipCard_div">
-                        <button className="flipCard_button" type="button" onClick={this.showBack}>
+                        <button
+                          className="flipCard_button"
+                          type="button"
+                          onClick={this.showBack}
+                        >
                           <i className="fa fa-code fa_flipButton"></i> Projects
                         </button>
                         <Experience jobs={preload.jobs} />
                       </div>
                       <div className="flipCard_div">
-                        <button className="flipCard_button" type="button" ref="backButton" onClick={this.showFront}>
-                          <i className="fa fa-briefcase fa_flipButtons"></i><br />Experience
+                        <button
+                          className="flipCard_button"
+                          type="button"
+                          ref="backButton"
+                          onClick={this.showFront}
+                        >
+                          <i className="fa fa-briefcase fa_flipButtons"></i>
+                          <br />
+                          Experience
                         </button>
                         <Examples projects={preload.projects} />
                       </div>
@@ -138,7 +170,7 @@ const App = React.createClass({
         </BrowserRouter>
       </Grid>
     );
-  }
+  },
 });
 
-ReactDOM.render(React.createElement(App), document.getElementById('app'));
+ReactDOM.render(React.createElement(App), document.getElementById("app"));
